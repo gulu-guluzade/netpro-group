@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style-type: none;
   user-select: all;
+  outline: none;
 }
 
 body {
@@ -13,8 +14,105 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
+a {
+  color: inherit;
+}
+
 .container {
   width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.container-fluid {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+/* ===== top-bar ===== */
+.top-bar {
+  background-color: rgba(67, 80, 114, 1);
+}
+
+/* top-bar inner */
+.top-bar__inner {
+  height: 65px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 25px;
+}
+
+/* general */
+.top-bar__address,
+.top-bar__phones,
+.top-bar__mail,
+.top-bar__social,
+.top-bar__rate,
+.top-bar__language {
+  display: flex;
+  align-items: center;
+
+  font-size: 13px;
+}
+
+/* address */
+.top-bar__address {
+  gap: 0 8px;
+}
+
+/* phones, mail. */
+.top-bar__phones,
+.top-bar__mail {
+  gap: 10px;
+}
+
+/* social */
+.top-bar__social {
+  gap: 5px;
+}
+
+.top-bar__social a {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(215, 215, 215, 1);
+  border-radius: 2px;
+}
+
+/* rate */
+.top-bar__rate {
+  gap: 0 6px;
+}
+
+.top-bar__rate .date {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.top-bar__rate select {
+  padding: 10px;
+  background-color: transparent;
+  border-color: rgba(215, 215, 215, 1);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+}
+
+/* rate, language */
+.top-bar__rate option,
+.top-bar__language option {
+  background-color: rgba(67, 80, 114, 1);
+}
+
+/* language */
+.top-bar__language select {
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 700;
 }
