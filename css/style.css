@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  user-select: all;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
