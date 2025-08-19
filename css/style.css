@@ -8,7 +8,13 @@
   outline: none;
 }
 
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 100%;
   color: rgba(255, 255, 255, 1);
@@ -309,7 +315,6 @@ select {
 .partners__title {
   font-size: 40px;
   color: rgba(67, 80, 114, 1);
-  line-height: 100%;
 }
 
 .partners__list {
@@ -327,7 +332,6 @@ select {
 
 .products__title {
   font-size: 40px;
-  line-height: 100%;
   padding: 60px 0;
   text-align: center;
 }
@@ -372,11 +376,90 @@ select {
 
 .products__product-name {
   font-size: 24px;
-  line-height: 100%;
 }
 
 .products__product-desc {
   font-size: 18px;
   line-height: 24px;
   width: 497px;
+}
+
+/* ===== services ===== */
+.services {
+  background-image: linear-gradient(rgba(251, 251, 251, 0.1)),
+    url("../images/services-bc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 75px 0 80px;
+}
+
+/* label */
+.services__label {
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+}
+
+.services__label p {
+  color: rgba(96, 111, 132, 1);
+  font-size: 20px;
+}
+
+/* title */
+.services__title {
+  color: rgba(67, 80, 114, 1);
+  font-size: 40px;
+  margin: 35px 0 50px;
+}
+
+/* list */
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 25px 20px;
+}
+
+/* card */
+.card {
+  padding: 20px 20px 20px 30px;
+  width: 400px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 8px 0px rgba(27, 50, 77, 0.1);
+  border-radius: 16px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  position: relative;
+  top: -6px;
+  border-bottom: 12px solid rgba(67, 80, 114, 1);
+}
+
+.card__img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: rgba(67, 80, 114, 0.082);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__title {
+  font-size: 20px;
+  color: rgba(67, 80, 114, 1);
+  height: 60px;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(96, 111, 132, 1);
 }
