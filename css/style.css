@@ -18,6 +18,11 @@ a {
   color: inherit;
 }
 
+button,
+select {
+  cursor: pointer;
+}
+
 .container {
   width: 1280px;
   margin: 0 auto;
@@ -115,4 +120,62 @@ a {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
   font-weight: 700;
+}
+
+/* ===== main menu ===== */
+.main-menu__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+
+/* nav */
+.main-menu__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 40px;
+}
+
+.main-menu__link {
+  color: rgba(67, 80, 114, 1);
+  font-weight: 700;
+  position: relative;
+}
+
+.main-menu__link::before {
+  content: "";
+  display: inline-block;
+  background: linear-gradient(
+    225deg,
+    rgba(255, 255, 255) 50%,
+    rgba(67, 80, 114, 1) 50%
+  );
+  width: 8px;
+  height: 8px;
+  transform: rotate(225deg);
+  position: absolute;
+  left: -18px;
+  top: calc(50% - 4px);
+}
+
+/* search-btn */
+.search-btn {
+  background-color: transparent;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn:hover {
+  background-color: rgba(233, 233, 233, 0.6);
+}
+
+.search-btn:active {
+  background-color: rgba(233, 233, 233, 1);
 }
