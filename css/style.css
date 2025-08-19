@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  user-select: all;
+  user-select: none;
   outline: none;
 }
 
@@ -241,4 +241,58 @@ select {
   position: relative;
   top: calc(50% - 10px);
   padding-left: 8px;
+}
+
+/* about */
+.about {
+  background-image: linear-gradient(rgba(28, 37, 61, 0.8)),
+    url("../images/about-bc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__content {
+  height: 677px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__title {
+  font-size: 40px;
+  margin: 48px 0 34px;
+}
+
+.about__text {
+  width: 1132px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* about button */
+.about__btn {
+  display: block;
+  margin-top: 48px;
+  padding: 15px 94px 15px 45px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(67, 80, 114, 1);
+  position: relative;
+}
+
+.about__btn::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 13.2px;
+  background: url("../images/arrow.png") center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: calc(50% - (13.2px / 2));
+  right: 45px;
 }
