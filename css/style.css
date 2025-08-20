@@ -463,3 +463,39 @@ select {
   line-height: 20px;
   color: rgba(96, 111, 132, 1);
 }
+
+/* ===== brands ===== */
+.brands {
+  background-image: linear-gradient(rgba(28, 37, 61, 0.8)),
+    url("../images/brands-bc.jpg");
+}
+
+.brands__content {
+  padding: 70px 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* title */
+.brands__title {
+  font-size: 40px;
+}
+
+/* list */
+.brands__list {
+  display: flex;
+  align-items: center;
+  gap: 0 36px;
+}
+
+/* list items */
+.brands__items {
+  width: 257px;
+  height: 84px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
