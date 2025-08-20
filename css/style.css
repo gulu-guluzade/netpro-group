@@ -468,6 +468,9 @@ select {
 .brands {
   background-image: linear-gradient(rgba(28, 37, 61, 0.8)),
     url("../images/brands-bc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .brands__content {
